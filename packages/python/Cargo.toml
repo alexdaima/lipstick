@@ -1,0 +1,22 @@
+[package]
+name = "lipstick-python"
+version = "1.0.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+highlighter = { path = "../../highlighter" }
+tree-sitter-highlight = "0.20.1"
+tree-sitter-python = { path = "../../parsers/python" }
+napi = "2"
+napi-derive = "2"
+lazy_static = "1.4"
+
+[build-dependencies]
+napi-build = { version = "1" }
+
+[profile.release]
+opt-level = 3
+lto = true

@@ -1,0 +1,19 @@
+{
+  "name": "tree-sitter-python",
+  "version": "0.20.2",
+  "description": "Tree-sitter for Python",
+  "main": "bindings/node",
+  "keywords": [],
+  "dependencies": {
+    "nan": "^2.15.0"
+  },
+  "devDependencies": {
+    "tree-sitter-cli": "^0.20.1"
+  },
+  "scripts": {
+    "build": "tree-sitter generate && node-gyp build",
+    "test": "tree-sitter test && script/parse-examples",
+    "parse": "tree-sitter parse",
+    "test-windows": "tree-sitter test"
+  }
+}

@@ -1,0 +1,9 @@
+[submodule "submodules/nvim-treesitter"]
+	path = submodules/nvim-treesitter
+	url = https://github.com/nvim-treesitter/nvim-treesitter
+[submodule "submodules/tree-sitter-python"]
+	path = submodules/tree-sitter-python
+	url = https://github.com/tree-sitter/tree-sitter-python
+[submodule "submodules/tree-sitter-regex"]
+	path = submodules/tree-sitter-regex
+	url = https://github.com/tree-sitter/tree-sitter-regex
