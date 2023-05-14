@@ -1,0 +1,5 @@
+target
+node_modules
+debug.json
+node-pkg
+*.node

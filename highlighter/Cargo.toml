@@ -1,0 +1,18 @@
+[package]
+name = "highlighter"
+version = "1.0.0"
+edition = "2021"
+
+[dependencies]
+tree-sitter-highlight = "0.20.1"
+tree-sitter-regex = { path = "../submodules/tree-sitter-regex" }
+napi = "2"
+napi-derive = "2"
+lazy_static = "1.4"
+
+[build-dependencies]
+napi-build = { version = "1" }
+
+[profile.release]
+opt-level = 3
+lto = true
